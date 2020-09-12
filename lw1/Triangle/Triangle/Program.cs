@@ -4,28 +4,30 @@ namespace Triangle
 {
     public class Program
     {
-        public const string UnknownError = "Unknown Error";
-        public const string EquilateralTriangle = "Equilateral";
-        public const string IsoscelesTriangle = "Isosceles";
-        public const string RegularTriangle = "Regular";
-        public const string NotTriangle = "Not Triangle";
-        public static bool CheckTriangleExistence(int a, int b, int c)
+        private const string UnknownError = "Unknown Error";
+        private const string EquilateralTriangle = "Equilateral";
+        private const string IsoscelesTriangle = "Isosceles";
+        private const string RegularTriangle = "Regular";
+        private const string NotTriangle = "Not Triangle";
+
+        private const double ACCEPTABLE_DELTA = 0.00001;
+
+        private static bool CheckTriangleExistence(double a, double b, double c)
         {
             return a + b > c && b + c > a && a + c > b;
         }
 
-        public static bool IsEquilateral(int a, int b, int c)
+        private static bool IsEquilateral(double a, double b, double c)
         {
-            return a == b && b == c;
+            return Math.Abs(a - b) < ACCEPTABLE_DELTA && Math.Abs(b - c) < ACCEPTABLE_DELTA;
         }
 
-        public static bool IsIsosceles(int a, int b, int c)
+        private static bool IsIsosceles(double a, double b, double c)
         {
-
-            return a == b || b == c || a == c;
+            return Math.Abs(a - b) < ACCEPTABLE_DELTA || Math.Abs(b - c) < ACCEPTABLE_DELTA || Math.Abs(a - c) < ACCEPTABLE_DELTA;
         }
 
-        public static string GetTriangleType(int a, int b, int c)
+        private static string GetTriangleType(double a, double b, double c)
         {
             if (CheckTriangleExistence(a, b, c))
             {
@@ -44,7 +46,7 @@ namespace Triangle
 
         public static void Main(string[] args)
         {
-            if (args.Length != 4)
+            if (args.Length != 3)
             {
                 Console.Write(UnknownError);
                 return;
@@ -52,9 +54,9 @@ namespace Triangle
 
             try
             {
-                int a = int.Parse(args[1]);
-                int b = int.Parse(args[2]);
-                int c = int.Parse(args[3]);
+                double a = double.Parse(args[0]);
+                double b = double.Parse(args[1]);
+                double c = double.Parse(args[2]);
 
                 Console.Write(GetTriangleType(a, b, c));
             }

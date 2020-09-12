@@ -8,28 +8,22 @@ namespace TriangleTests
     [TestClass]
     public class InputFileTests
     {
-        public static void WriteResultToOutputFile(string outputFile, int testCounter)
-        {
-            using (var tw = new StreamWriter(outputFile, true))
-            {
-                tw.WriteLine(testCounter + " success");
-            }
-        }
-
         [TestMethod]
         public void InputFileTests_WithDifferentArgs()
         {
-            string outputFile = @"output.txt";
-            File.WriteAllText(outputFile, string.Empty);
+            string outputFileName = @"output.txt";
+            File.WriteAllText(outputFileName, string.Empty);
+            using var outputFile = new StreamWriter(outputFileName, true);
+
             int testCounter = 1;
 
-            using (var sr = new StreamReader("input.txt"))
+            using (var inputFile = new StreamReader(@"input.txt"))
             {
                 string argsLine;
-                while ((argsLine = sr.ReadLine()) != null)
+                while ((argsLine = inputFile.ReadLine()) != null)
                 {
                     string[] argsArr = argsLine.Split();
-                    string expectedResult = sr.ReadLine();
+                    string expectedResult = inputFile.ReadLine();
 
                     var sw = new StringWriter();
                     Console.SetOut(sw);
@@ -39,7 +33,7 @@ namespace TriangleTests
 
                     Assert.AreEqual(result, expectedResult);
 
-                    WriteResultToOutputFile(outputFile, testCounter++);
+                    outputFile.WriteLine($"Test #{testCounter++}: success");
                 }
             }
         }

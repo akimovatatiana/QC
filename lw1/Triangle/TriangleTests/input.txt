@@ -1,26 +1,38 @@
-﻿triangle.exe 3 4 5
+﻿3 4 5
 Regular
-triangle.exe 3 3 3
+5 4 3
+Regular
+3 5 4
+Regular
+0,3 0,4 0,5
+Regular
+10 10 10
 Equilateral
-triangle.exe 2 3 3
+10,68 10,68 10,68
+Equilateral
+2 3 3
 Isosceles
-triangle.exe 3 3 2
+3 3 2
 Isosceles
-triangle.exe 3 2 3
+3 2 3
 Isosceles
-triangle.exe
-Unknown Error
-triangle.exe 1
-Unknown Error
-triangle.exe hello 2 3
-Unknown Error
-triangle.exe 0 2 3
-Not Triangle
-
-Unknown Error
+36,89 20 36,89
+Isosceles
 1
 Unknown Error
-triangle.exe 3 2 3 8
+2 3 hello
 Unknown Error
-triangle.exe -5 4 5
+hello hello hello
+Unknown Error
+
+Unknown Error
+3 2 3 8
+Unknown Error
+-5 4 5
+Not Triangle
+0 2 3
+Not Triangle
+8,6 2,6 4,3
+Not Triangle
+8 2 3
 Not Triangle
