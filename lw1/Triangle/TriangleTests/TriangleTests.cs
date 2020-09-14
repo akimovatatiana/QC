@@ -11,13 +11,13 @@ namespace TriangleTests
         [TestMethod]
         public void InputFileTests_WithDifferentArgs()
         {
-            string outputFileName = @"output.txt";
+            string outputFileName = @"../../../output.txt";
             File.WriteAllText(outputFileName, string.Empty);
             using var outputFile = new StreamWriter(outputFileName, true);
 
             int testCounter = 1;
 
-            using (var inputFile = new StreamReader(@"input.txt"))
+            using (var inputFile = new StreamReader(@"../../../input.txt"))
             {
                 string argsLine;
                 while ((argsLine = inputFile.ReadLine()) != null)
