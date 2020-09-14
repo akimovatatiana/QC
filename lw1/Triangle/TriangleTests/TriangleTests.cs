@@ -1,6 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
 using Triangle;
 
 namespace TriangleTests
@@ -21,8 +23,8 @@ namespace TriangleTests
             {
                 string argsLine;
                 while ((argsLine = inputFile.ReadLine()) != null)
-                {
-                    string[] argsArr = argsLine.Split();
+                {   
+                    string[] argsArr = Regex.Replace(argsLine, @"\s+", " ").Split();
                     string expectedResult = inputFile.ReadLine();
 
                     var sw = new StringWriter();

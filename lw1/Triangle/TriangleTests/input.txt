@@ -4,11 +4,15 @@ Regular
 Regular
 3 5 4
 Regular
+3    4    5
+Regular
 0,3 0,4 0,5
 Regular
 10 10 10
 Equilateral
 10,68 10,68 10,68
+Equilateral
+1,7976931348623157E+308 1,7976931348623157E+308 1,7976931348623157E+308
 Equilateral
 2 3 3
 Isosceles
@@ -27,6 +31,8 @@ Unknown Error
 
 Unknown Error
 3 2 3 8
+Unknown Error
+D E F
 Unknown Error
 -5 4 5
 Not Triangle
