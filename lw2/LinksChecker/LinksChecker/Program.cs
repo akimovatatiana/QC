@@ -17,12 +17,17 @@ namespace LinksChecker
 
         private static bool IsLinkCorrect(string link)
         {
-            return !string.IsNullOrEmpty(link) && !(link.StartsWith("#") || link.Contains(HttpProtocol)) ;
+            return !string.IsNullOrEmpty(link) && !link.StartsWith("#");
+        }
+
+        private static bool IsExternalLink(string link)
+        {
+            return link.Contains(HttpProtocol);
         }
 
         private static string FormFullLink(string link)
         {
-            return Url + link; 
+            return IsExternalLink(link) ? link : Url + link; 
         }
 
         private static void PrintInfoToFiles(StreamWriter invalidLinksFile, StreamWriter validLinksFile)
@@ -73,8 +78,13 @@ namespace LinksChecker
 
         private static void GetUniqueLinksFromSiteRecursively(string link, List<string> links)
         {
-            var linksFromPage = GetLinksFromSite(FormFullLink(link));
             links.Add(link);
+            if (IsExternalLink(link))
+            {
+                return;
+            }
+
+            var linksFromPage = GetLinksFromSite(FormFullLink(link));
             
             if (linksFromPage.Any())
             {
