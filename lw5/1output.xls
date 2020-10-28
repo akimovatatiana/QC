@@ -1,0 +1,71 @@
+Font	Size	Font style	Font color	Underline style	Underline color	Strikethrough	Double strikethrough	Superscript	Subscript	Small caps	All caps	Equalize character height	Offset
+Courier New	96.5	bold italic	yellow	double line	yellow	true	false	true	false	true	false	true	1
+Verdana	1	regular	white	line	blue	false	false	false	false	false	true	false	-50
+Times New Roman	1	italic	yellow	wavy line	black	true	false	false	true	false	true	true	-1
+Calibri	96.5	regular	blue	wavy line	yellow	true	false	false	false	false	true	true	-1
+Calibri	1	italic	black	wavy line	yellow	true	false	false	false	false	true	false	-100
+Calibri	3600	bold	black	line	red	false	false	true	false	true	false	true	1
+Arial	3600	italic	blue	line	white	false	true	false	false	false	true	false	-50
+Times New Roman	3600	regular	blue	dotted	white	false	true	true	false	false	true	false	1
+Calibri	1	italic	yellow	wavy line	blue	true	false	false	false	true	false	false	0
+Verdana	1	regular	white	wavy line	red	false	true	false	false	false	true	false	-1
+Courier New	3600	regular	blue	double line	blue	false	true	false	true	false	true	true	-1
+Calibri	1	italic	black	wavy line	yellow	true	false	false	true	false	true	false	-100
+Verdana	12	bold	black	line	yellow	true	false	false	false	true	false	false	0
+Courier New	12	bold italic	blue	line	white	false	true	false	false	true	false	false	0
+Times New Roman	96.5	bold italic	red	dotted	red	false	true	false	false	true	false	true	-100
+Times New Roman	96.5	bold	white	double line	black	true	false	false	false	false	true	true	0
+Calibri	3600	bold italic	white	none	none	false	true	false	true	false	true	true	-1
+Arial	1	regular	yellow	line	red	false	true	false	true	false	false	true	-1
+Arial	1	regular	white	none	none	true	false	true	false	false	true	false	1
+Arial	96.5	regular	black	dotted	red	false	true	false	false	false	false	true	0
+Times New Roman	96.5	italic	red	line	yellow	true	false	true	false	true	false	false	100
+Courier New	3600	bold	yellow	wavy line	blue	true	false	false	false	false	true	true	-100
+Courier New	96.5	bold	black	wavy line	red	false	true	true	false	true	false	true	50
+Times New Roman	96.5	bold italic	red	dotted	red	false	true	false	true	true	false	true	-100
+Arial	12	italic	red	none	none	false	false	true	false	false	true	false	50
+Times New Roman	12	regular	black	none	none	false	true	false	false	false	false	true	-50
+Courier New	96.5	regular	white	line	white	false	true	false	false	true	false	false	-100
+Verdana	12	bold	yellow	wavy line	white	false	true	true	false	false	true	false	50
+Arial	1	bold	blue	wavy line	red	true	false	false	true	true	false	true	-50
+Verdana	3600	regular	white	dotted	yellow	true	false	true	false	true	false	true	50
+Times New Roman	1	italic	yellow	wavy line	black	true	false	false	false	false	true	true	-1
+Verdana	96.5	italic	blue	none	none	true	false	true	false	true	false	false	100
+Calibri	12	bold	red	dotted	blue	false	true	false	true	true	false	true	-1
+Verdana	96.5	regular	red	none	none	false	false	false	true	false	true	true	-100
+Verdana	1	bold italic	red	double line	white	false	true	false	true	false	true	false	-50
+Times New Roman	96.5	bold	red	double line	blue	true	false	true	false	false	false	true	1
+Courier New	3600	bold italic	yellow	dotted	black	false	true	false	false	true	false	false	-50
+Arial	96.5	bold	red	double line	yellow	false	true	false	true	false	true	false	-50
+Calibri	12	regular	black	double line	white	true	false	false	true	false	false	false	-1
+Arial	12	bold	blue	double line	black	false	true	false	true	false	true	true	-100
+Arial	12	italic	white	double line	red	false	true	true	false	false	true	false	100
+Arial	3600	italic	blue	line	white	false	true	false	true	false	true	false	-50
+Times New Roman	96.5	bold italic	blue	double line	blue	false	true	true	false	false	false	false	50
+Times New Roman	12	regular	black	none	none	false	true	false	true	false	false	true	-50
+Arial	96.5	bold	red	double line	yellow	false	true	false	false	false	true	false	-50
+Arial	12	bold	blue	double line	black	false	true	false	false	false	true	true	-100
+Courier New	12	bold italic	blue	none	none	false	false	false	false	false	false	true	0
+Courier New	3600	italic	red	wavy line	yellow	false	false	false	false	false	false	true	0
+Verdana	96.5	regular	red	none	none	false	false	false	false	false	true	true	-100
+Calibri	3600	bold italic	white	none	none	false	true	false	false	false	true	true	-1
+Arial	1	regular	yellow	line	red	false	true	false	false	false	false	true	-1
+Courier New	96.5	regular	white	line	white	false	true	false	true	true	false	false	-100
+Calibri	96.5	regular	blue	wavy line	yellow	true	false	false	true	false	true	true	-1
+Arial	3600	bold italic	black	wavy line	blue	true	false	true	false	true	false	false	100
+Verdana	1	regular	white	line	blue	false	false	false	true	false	true	false	-50
+Arial	12	regular	blue	none	none	false	false	true	false	true	false	false	100
+Calibri	1	bold	yellow	none	none	false	true	false	true	false	true	false	-50
+Calibri	12	regular	black	double line	white	true	false	false	false	false	false	false	-1
+Verdana	1	bold italic	red	double line	white	false	true	false	false	false	true	false	-50
+Courier New	3600	bold italic	yellow	dotted	black	false	true	false	true	true	false	false	-50
+Courier New	3600	bold	yellow	wavy line	blue	true	false	false	true	false	true	true	-100
+Calibri	12	bold	red	dotted	blue	false	true	false	false	true	false	true	-1
+Calibri	1	regular	red	line	black	false	true	true	false	true	false	true	50
+Courier New	1	italic	black	dotted	white	false	true	true	false	false	true	true	100
+Calibri	1	bold	yellow	none	none	false	true	false	false	false	true	false	-50
+Verdana	1	regular	white	wavy line	red	false	true	false	true	false	true	false	-1
+Verdana	12	italic	black	wavy line	black	false	false	true	false	false	false	true	1
+Arial	1	bold	blue	wavy line	red	true	false	false	false	true	false	true	-50
+Calibri	1	bold	yellow	wavy line	black	false	false	true	false	true	false	false	100
+Courier New	3600	regular	blue	double line	blue	false	true	false	false	false	true	true	-1

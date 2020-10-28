@@ -1,0 +1,25 @@
+Font: Verdana, Arial, Times New Roman, Calibri, Courier New
+Size: 1, 12, 96.5, 3600
+Font style: regular, bold, italic, bold italic
+Font color: black, white, red, blue, yellow 
+Underline style: none, line, double line, dotted, wavy line 
+Underline color: none, black, white, red, blue, yellow
+Strikethrough: true, false
+Double strikethrough: true, false
+Superscript: true, false
+Subscript: true, false
+Small caps: true, false
+All caps: true, false
+Equalize character height: true, false
+Offset: -100, -50, -1, 0, 1, 50, 100
+
+{Font, Size, Font style, Font color, Underline style, Underline color, Strikethrough, Double strikethrough, Superscript, Small caps, All caps, Equalize character height, Offset} @ 2
+
+IF [Underline style] = "none" THEN [Underline color] = "none";
+IF [Underline color] = "none" THEN [Underline style] = "none";
+IF [Strikethrough] = "true" THEN [Double strikethrough] = "false";
+IF [Superscript] = "true" THEN [Subscript] = "false";
+IF [Small caps] = "true" THEN [All caps] = "false";
+IF [Offset] in {-100, -50, -1} THEN [Superscript] = "false";
+IF [Offset] in {1, 50, 100} THEN [Superscript] = "true";
+IF [Offset] = 0 THEN [Subscript] = "false" AND [Superscript] = "false";
