@@ -13,8 +13,6 @@ All caps: true, false
 Equalize character height: true, false
 Offset: -100, -50, -1, 0, 1, 50, 100
 
-{Font, Size, Font style, Font color, Underline style, Underline color, Strikethrough, Double strikethrough, Superscript, Small caps, All caps, Equalize character height, Offset} @ 2
-
 IF [Underline style] = "none" THEN [Underline color] = "none";
 IF [Underline color] = "none" THEN [Underline style] = "none";
 IF [Strikethrough] = "true" THEN [Double strikethrough] = "false";
